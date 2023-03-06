@@ -1,4 +1,4 @@
-import Photo from '../models/PhotoModel.js';
+import Photo from '../models/photoModel.js';
 import { v2 as cloudinary } from 'cloudinary';
 import fs from 'fs';
 

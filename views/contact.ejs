@@ -70,10 +70,12 @@
                   })
 
                   const data = await res.json();
-                  
+
+                  console.log("DATA", data)
+
                   if (data.succeeded) {
 
-                     sendMessage.textContent = "Your Message Received Succsfully" 
+                     sendMessage.textContent = "Your Message Received Succsfully"
                      sendMessage.style.display = "block"
 
                      setTimeout(() => {
@@ -84,7 +86,10 @@
 
                      }, 5000)
 
+
+
                   }
+
 
                } catch (err) {
                   console.log("ERR::", err)

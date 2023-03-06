@@ -1,7 +1,7 @@
-import User from '../models/UserModel.js';
+import User from '../models/userModel.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import Photo from '../models/PhotoModel.js';
+import Photo from '../models/photoModel.js';
 
 const createUser = async (req, res) => {
   try {
@@ -177,12 +177,13 @@ const unfollow = async (req, res) => {
     });
   }
 };
+
 export {
-   createUser,
-   loginUser,
-   getDashboardPage,
-   getAllUsers,
-   getAUser,
-   follow,
-   unfollow,
+  createUser,
+  loginUser,
+  getDashboardPage,
+  getAllUsers,
+  getAUser,
+  follow,
+  unfollow,
 };
