@@ -1,7 +1,7 @@
 import User from '../models/userModel.js';
+import Photo from '../models/photoModel.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import Photo from '../models/photoModel.js';
 
 const createUser = async (req, res) => {
   try {
